@@ -1,0 +1,12 @@
+{"level":"fatal","msg":"Failed to connect to database: failed to connect to `host=localhost user=postgres database=your_db_name`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)","time":"2025-02-07T13:02:20+05:00"}
+{"level":"fatal","msg":"Failed to connect to database: failed to connect to `host=localhost user=postgres database=postgres`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)","time":"2025-02-07T13:08:04+05:00"}
+{"level":"fatal","msg":"Failed to connect to database: failed to connect to `host=localhost user=song database=postgres`: failed SASL auth (FATAL: password authentication failed for user \"song\" (SQLSTATE 28P01))","time":"2025-02-08T10:56:03+05:00"}
+{"level":"fatal","msg":"Failed to run migrations: migration failed: relation \"songs\" already exists in line 0: CREATE TABLE songs (\n    id SERIAL PRIMARY KEY,\n    group_name TEXT NOT NULL,\n    title TEXT NOT NULL,\n    release_date TIMESTAMP NOT NULL,\n    text TEXT NOT NULL,\n    link TEXT NOT NULL\n); (details: pq: relation \"songs\" already exists)","time":"2025-02-08T10:56:20+05:00"}
+{"level":"fatal","msg":"Failed to run migrations: Dirty database version 1. Fix and force version.","time":"2025-02-08T11:23:37+05:00"}
+{"level":"fatal","msg":"Failed to run migrations: Dirty database version 1. Fix and force version.","time":"2025-02-08T11:26:17+05:00"}
+{"level":"fatal","msg":"Failed to run migrations: Dirty database version 1. Fix and force version.","time":"2025-02-08T11:27:03+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-08T11:28:42+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-08T11:31:33+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-09T20:02:49+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-09T20:06:32+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-09T20:11:38+05:00"}

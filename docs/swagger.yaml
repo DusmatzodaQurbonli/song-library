@@ -1,0 +1,219 @@
+basePath: /
+definitions:
+  entity.Song:
+    description: Song entity
+    properties:
+      group:
+        type: string
+      id:
+        type: integer
+      link:
+        type: string
+      release_date:
+        type: string
+      text:
+        type: string
+      title:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: This is a simple song library API.
+  title: Song Library API
+  version: "1.0"
+paths:
+  /songs:
+    get:
+      consumes:
+      - application/json
+      description: Get songs with pagination
+      parameters:
+      - default: 1
+        description: Page number
+        in: query
+        name: page
+        type: integer
+      - default: 10
+        description: Page size
+        in: query
+        name: size
+        type: integer
+      - description: Filter by group
+        in: query
+        name: group
+        type: string
+      - description: Filter by title
+        in: query
+        name: title
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: List of songs
+          schema:
+            items:
+              $ref: '#/definitions/entity.Song'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get paginated songs
+      tags:
+      - songs
+    post:
+      consumes:
+      - application/json
+      description: Add a new song to the library
+      parameters:
+      - description: Song Data
+        in: body
+        name: song
+        required: true
+        schema:
+          $ref: '#/definitions/entity.Song'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created song
+          schema:
+            $ref: '#/definitions/entity.Song'
+        "400":
+          description: Invalid input
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Add new song
+      tags:
+      - songs
+  /songs/{id}:
+    delete:
+      description: Delete a song by ID
+      parameters:
+      - description: Song ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+        "404":
+          description: Song not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete song
+      tags:
+      - songs
+    put:
+      consumes:
+      - application/json
+      description: Update song data
+      parameters:
+      - description: Song ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Song Data
+        in: body
+        name: song
+        required: true
+        schema:
+          $ref: '#/definitions/entity.Song'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Updated song
+          schema:
+            $ref: '#/definitions/entity.Song'
+        "400":
+          description: Invalid input
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Song not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update song
+      tags:
+      - songs
+  /songs/{id}/text:
+    get:
+      consumes:
+      - application/json
+      description: Get song text paginated by verses
+      parameters:
+      - description: Song ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - default: 1
+        description: Page number
+        in: query
+        name: page
+        type: integer
+      - default: 10
+        description: Page size
+        in: query
+        name: size
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Paginated song text
+          schema:
+            items:
+              type: string
+            type: array
+        "404":
+          description: Song not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get song text with pagination
+      tags:
+      - songs
+swagger: "2.0"

@@ -1,0 +1,19 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "postgres",
+    "pass": "song-library",
+    "name": "postgres"
+  },
+  "log_level": {
+    "info": "info",
+    "debug": "debug",
+    "warn": "warn",
+    "error": "error"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": "8080"
+  }
+}

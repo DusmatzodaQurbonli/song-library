@@ -1,0 +1,86 @@
+openapi: 3.0.3
+info:
+  title: Song Library API
+  version: 1.0.0
+paths:
+  /songs:
+    post:
+      summary: Add a new song
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Song'
+      responses:
+        '201':
+          description: Song created
+    get:
+      summary: Get all songs
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          in: query
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of songs
+  /songs/{id}:
+    get:
+      summary: Get a song by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Song details
+    put:
+      summary: Update a song
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Song'
+      responses:
+        '200':
+          description: Song updated
+    delete:
+      summary: Delete a song
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Song deleted
+components:
+  schemas:
+    Song:
+      type: object
+      properties:
+        group:
+          type: string
+        title:
+          type: string
+        releaseDate:
+          type: string
+        text:
+          type: string
+        link:
+          type: string
