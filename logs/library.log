@@ -31,3 +31,34 @@
 {"level":"info","msg":"Server is shutting down...","time":"2025-02-10T14:12:18+05:00"}
 {"level":"info","msg":"Shutting down server...","time":"2025-02-10T14:12:18+05:00"}
 {"level":"info","msg":"Server stopped","time":"2025-02-10T14:12:18+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to open source, \"file://migration/migrations\": open .: no such file or directory","time":"2025-02-10T14:55:31+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T14:56:17+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T14:56:17+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T14:56:17+05:00"}
+{"level":"info","msg":"Request: GET /swagger/*any","time":"2025-02-10T14:57:08+05:00"}
+{"level":"info","msg":"Request: GET /favicon.ico","time":"2025-02-10T14:57:08+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T15:02:02+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T15:02:02+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T15:02:17+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T15:02:17+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T15:02:17+05:00"}
+{"level":"info","msg":"[404] GET /swagger/*any | ::1 | 79.15µs","time":"2025-02-10T15:02:33+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T15:03:27+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T15:03:27+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T15:05:59+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T15:05:59+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T15:05:59+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T15:07:18+05:00"}
+{"level":"info","msg":"Server stopped","time":"2025-02-10T15:07:18+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T15:07:18+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T15:07:22+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T15:07:22+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T15:07:22+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T15:12:06+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T15:12:06+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T15:14:48+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T15:14:48+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T15:14:48+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T15:15:56+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T15:15:56+05:00"}
+{"level":"info","msg":"Server stopped","time":"2025-02-10T15:15:56+05:00"}

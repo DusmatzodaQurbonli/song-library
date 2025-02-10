@@ -34,7 +34,7 @@ type Config struct {
 }
 
 func New() (*Config, error) {
-	filePath := "config.json"
+	filePath := "configs/config.json"
 	file, err := os.Open(filePath)
 	if err != nil {
 		return nil, fmt.Errorf("Failed to open configuration file: %w", err)

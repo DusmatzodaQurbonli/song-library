@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/DusmatzodaQurbonli/song-library/internal/config"
 	"github.com/DusmatzodaQurbonli/song-library/internal/handler"
+	log "github.com/DusmatzodaQurbonli/song-library/internal/logger"
 	"github.com/DusmatzodaQurbonli/song-library/internal/repository"
 	"github.com/DusmatzodaQurbonli/song-library/internal/service"
 	"github.com/DusmatzodaQurbonli/song-library/pkg/http"
-	log "github.com/DusmatzodaQurbonli/song-library/pkg/logger"
 	"github.com/golang-migrate/migrate/v4"
 	_ "github.com/golang-migrate/migrate/v4/database/postgres"
 	_ "github.com/golang-migrate/migrate/v4/source/file"
@@ -58,7 +58,7 @@ func runMigrations(db *gorm.DB, log *logrus.Logger, cfg *config.Config) {
 	defer sqlDB.Close()
 
 	m, err := migrate.New(
-		fmt.Sprintf("file://%s", "migration/migrations"),
+		fmt.Sprintf("file://%s", "internal/migration/migrations"),
 		fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable",
 			cfg.DB.User, cfg.DB.Pass, cfg.DB.Host, cfg.DB.Port, cfg.DB.Name,
 		),
