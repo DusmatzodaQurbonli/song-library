@@ -10,3 +10,24 @@
 {"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-09T20:02:49+05:00"}
 {"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-09T20:06:32+05:00"}
 {"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-09T20:11:38+05:00"}
+{"level":"fatal","msg":"Migration initialization failed: failed to parse scheme from source URL: no scheme","time":"2025-02-10T13:12:45+05:00"}
+{"level":"info","msg":"DB User: postgres, DB Name: postgres","time":"2025-02-10T13:20:05+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T13:20:05+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T13:20:46+05:00"}
+
+{"level":"info","msg":"Migrations applied successfully!","time":"2025-02-10T13:29:29+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T14:08:25+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T14:08:25+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T14:08:25+05:00"}
+{"level":"info","msg":"Request: GET /songs","time":"2025-02-10T14:10:27+05:00"}
+{"error":"sql: database is closed","filter":{},"level":"error","msg":"Failed to get songs","page":1,"size":10,"time":"2025-02-10T14:10:27+05:00"}
+{"error":"sql: database is closed","filter":{},"level":"error","msg":"Failed to get songs","page":1,"size":10,"time":"2025-02-10T14:10:27+05:00"}
+{"error":"sql: database is closed","level":"error","msg":"Failed to get songs","time":"2025-02-10T14:10:27+05:00"}
+{"level":"info","msg":"Request: POST /songs","time":"2025-02-10T14:10:45+05:00"}
+{"error":"parsing time \"string\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"string\" as \"2006\"","level":"error","msg":"Failed to bind JSON","time":"2025-02-10T14:10:45+05:00"}
+{"level":"info","msg":"Request: PUT /songs/1","time":"2025-02-10T14:11:49+05:00"}
+{"error":"parsing time \"string\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"string\" as \"2006\"","level":"error","msg":"Failed to bind JSON","time":"2025-02-10T14:11:49+05:00"}
+{"level":"info","msg":"Request: GET /songs/1/text","time":"2025-02-10T14:12:06+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T14:12:18+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T14:12:18+05:00"}
+{"level":"info","msg":"Server stopped","time":"2025-02-10T14:12:18+05:00"}

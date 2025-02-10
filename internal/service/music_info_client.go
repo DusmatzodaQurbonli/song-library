@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/DusmatzodaQurbonli/song-library/internal/config"
 	"github.com/DusmatzodaQurbonli/song-library/internal/entity"
 	"io"
 	"net/http"
@@ -18,8 +19,8 @@ type musicInfoClient struct {
 	baseURL string
 }
 
-func NewMusicInfoClient(baseURL string) MusicInfoClient {
-	return &musicInfoClient{baseURL: baseURL}
+func NewMusicInfoClient(cfg *config.Config) MusicInfoClient {
+	return &musicInfoClient{baseURL: cfg.MusicInfoAPI}
 }
 
 func (c *musicInfoClient) GetSongInfo(ctx context.Context, group, title string) (*entity.Song, error) {

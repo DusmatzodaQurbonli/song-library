@@ -27,9 +27,10 @@ type Server struct {
 }
 
 type Config struct {
-	DB       DB       `json:"db"`
-	LogLevel LogLevel `json:"log_level"`
-	Server   Server   `json:"server"`
+	DB           DB       `json:"db"`
+	LogLevel     LogLevel `json:"log_level"`
+	Server       Server   `json:"server"`
+	MusicInfoAPI string   `json:"music_info_api"`
 }
 
 func New() (*Config, error) {

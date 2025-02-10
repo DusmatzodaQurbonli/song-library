@@ -26,7 +26,7 @@ func main() {
 			log.New,
 			initializeDB,
 			repository.NewSongRepository,
-			service.NewMusicInfoClient,
+			service.NewMusicInfoClient, // Теперь передаем правильно
 			service.NewSongService,
 			handler.NewSongHandler,
 			http.NewServer,
@@ -58,7 +58,7 @@ func runMigrations(db *gorm.DB, log *logrus.Logger, cfg *config.Config) {
 	defer sqlDB.Close()
 
 	m, err := migrate.New(
-		"migration/migrations",
+		fmt.Sprintf("file://%s", "migration/migrations"),
 		fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable",
 			cfg.DB.User, cfg.DB.Pass, cfg.DB.Host, cfg.DB.Port, cfg.DB.Name,
 		),
