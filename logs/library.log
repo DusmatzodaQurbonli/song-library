@@ -62,3 +62,26 @@
 {"level":"info","msg":"Server is shutting down...","time":"2025-02-10T15:15:56+05:00"}
 {"level":"info","msg":"Shutting down server...","time":"2025-02-10T15:15:56+05:00"}
 {"level":"info","msg":"Server stopped","time":"2025-02-10T15:15:56+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-10T20:56:39+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-10T20:56:39+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-10T20:56:39+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-10T20:57:34+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-10T20:57:34+05:00"}
+{"level":"info","msg":"Server stopped","time":"2025-02-10T20:57:34+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-11T09:57:27+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-11T09:57:27+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-11T09:57:27+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-11T09:57:39+05:00"}
+{"level":"info","msg":"Server stopped","time":"2025-02-11T09:57:39+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-11T09:57:39+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-11T09:57:44+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-11T09:57:44+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-11T09:57:44+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-11T09:59:10+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-11T09:59:10+05:00"}
+{"level":"info","msg":"No new migrations to apply.","time":"2025-02-11T09:59:13+05:00"}
+{"level":"info","msg":"Starting server on port 8080","time":"2025-02-11T09:59:13+05:00"}
+{"level":"info","msg":"Server is running on host 0.0.0.0 and port 8080","time":"2025-02-11T09:59:13+05:00"}
+{"level":"info","msg":"[404] GET /favicon.ico | ::1 | 701ns","time":"2025-02-11T10:50:21+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2025-02-11T11:13:39+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2025-02-11T11:13:39+05:00"}
